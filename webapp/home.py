@@ -1,7 +1,7 @@
 import justpy as jp
 
 class Home:
-    path = "/home"
+    path = "/"
 
     def serve(self):
         wp = jp.QuasarPage(tailwind=True)
@@ -21,5 +21,4 @@ class Home:
                """, classes="text-lg")
         return wp
 
-jp.Route(Home.path, Home.serve)
-jp.justpy(port=8001)
+
