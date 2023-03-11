@@ -26,5 +26,5 @@ class Dictionary:
 
     @staticmethod
     def get_definition(widget, msg):
-
-        widget.outputdiv.text = widget.inputbox.value
+        defined = definition.Definition(widget.inputbox.value).get()
+        widget.outputdiv.text = " ".join(defined)
