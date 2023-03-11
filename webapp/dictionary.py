@@ -19,9 +19,7 @@ class Dictionary:
                                      "focus:bg-white focus:outline-none focus:border-purple-500 py-2 px-4")
 
         output_div = jp.Div(a=div, classes="m-2 p-2 text-lg border-2 h-40")
-        jp.Button(a=input_div, text="Get Definition", classes="border border-blue-500 m-3 "
-                                                              "py-1 px-4 rounded hover:bg-red-500 hover:text-white",
-                  click=cls.get_definition, outputdiv=output_div, inputbox=input_box)
+
         return wp
 
     @staticmethod
